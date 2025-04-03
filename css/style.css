@@ -56,7 +56,7 @@ ul li a::after {
   position: absolute;
   left: 0;
   bottom: -6px;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
 ul li a:hover::after {
@@ -477,7 +477,7 @@ header ul{
   width: 200px;
   height: 100%;
   padding-top: 50px;
-  transition: 0.5s;
+  transition: 3s;
 }
 
 header ul {
