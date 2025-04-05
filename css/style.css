@@ -487,6 +487,39 @@ header ul {
 header ul li  ,header ul .fam {
   margin: 25px;
 }
+}
 
-
+@media screen and (max-width:1000px) 
+{
+  header .fam{
+    display: block;
+    font-size: 25px;
+  }
+  
+  header ul .fam{
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  
+  header ul{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    padding-top: 50px;
+    transition: 3s;
+    z-index: 2;
+  }
+  
+  header ul {
+    display: block; 
+  }
+  
+  header ul li  ,header ul .fam {
+    margin: 25px;
+  }
+    
 }
