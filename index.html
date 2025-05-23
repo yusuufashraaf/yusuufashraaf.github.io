@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../fonts-6/css/all.css">
     <script src="https://kit.fontawesome.com/e42ed6ecc1.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
@@ -28,8 +28,8 @@
 
             <li><a href="#main" onclick="closemenu()">Home</a></li>
             <li><a href="#projects" onclick="closemenu()">Projects</a></li>
-            <li><a href="#exprience"onclick="closemenu()">Experience</a></li>
-            <li><a href="#contact"onclick="closemenu()">Contacts</a></li>
+            <li><a href="#exprience" onclick="closemenu()">Experience</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contacts</a></li>
         </ul>
         <i class="fam fa-solid fa-bars" onclick="openmenu()"></i>
     </header>
@@ -185,14 +185,24 @@
     </div>
 </body>
 <script>
-    var sidemenu =document.getElementById("sidemenu");
+    var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu(){
-        sidemenu.style.right ="0";
+    function openmenu() {
+        sidemenu.style.right = "0";
     }
 
-    function closemenu(){
-        sidemenu.style.right ="-200px";
+    function closemenu() {
+        sidemenu.style.right = "-200px";
     }
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuIcon = document.querySelector("header .fam");
+        const navMenu = document.querySelector("header ul");
+
+        menuIcon.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    });
+
 </script>
+
 </html>
