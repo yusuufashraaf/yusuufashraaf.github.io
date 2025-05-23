@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  position:fixed ;
+  position: fixed;
   background-color: #222;
   height: 82.18px;
   display: flex;
@@ -69,12 +69,20 @@ ul li {
 
 .profile-img {
   display: block;
-  width: 384px;
-  height: 384px;
+  width: 500px;
+  height: 500px;
   margin: auto;
   margin-top: 100px;
   border: 2px solid #c5c5c5;
   border-radius: 100%;
+}
+.profile-img img {
+  width: 500px; /* or any fixed size you prefer */
+  height: 500px; /* ensure width = height */
+  border-radius: 50%; /* makes the image circular */
+  object-fit: cover; /* ensures the image fills the circle without stretching */
+  display: block;
+  margin: 0 auto; /* centers the image if needed */
 }
 
 .code-text {
@@ -196,7 +204,7 @@ ul li {
   -webkit-text-fill-color: transparent;
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,7 +296,7 @@ ul li {
   height: 116px;
   align-items: center;
 }
-header .fam{
+header .fam {
   display: none;
   color: #ffffff;
 }
@@ -366,11 +374,8 @@ header .fam{
   font-weight: bold;
 }
 
-
-@media screen and (max-width:600px) 
-{
-  
-  .projectt-icons{
+@media screen and (max-width: 600px) {
+  .projectt-icons {
     width: 100%;
     height: 650px;
     display: flex;
@@ -379,7 +384,7 @@ header .fam{
     align-items: center;
   }
 
-  .body{
+  .body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -387,105 +392,101 @@ header .fam{
   .profile-img {
     margin-left: 13%;
   }
-.code-text{
-  width: 100%;
-  text-align: center;
-  margin-left: 18%;
-}
+  .code-text {
+    width: 100%;
+    text-align: center;
+    margin-left: 18%;
+  }
 
-.code-text p{
-  font-size: 32px;
-  width: 100%;
-}
+  .code-text p {
+    font-size: 32px;
+    width: 100%;
+  }
 
-.short-bio{
-  width: 100%;
-  margin-left: 18%;
-}
+  .short-bio {
+    width: 100%;
+    margin-left: 18%;
+  }
 
-.buttons{
-  width: 100%;
-  margin-left: 18%;
-}
-.button1{
-  margin-right: 40px;
-}
+  .buttons {
+    width: 100%;
+    margin-left: 18%;
+  }
+  .button1 {
+    margin-right: 40px;
+  }
 
-.exprience-with{
-  margin-left: 18%;
-font-size: 30px;
-width: 100%;
-}
-.icons{
-  margin-left: 18%;
+  .exprience-with {
+    margin-left: 18%;
+    font-size: 30px;
+    width: 100%;
+  }
+  .icons {
+    margin-left: 18%;
+  }
+  .projects {
+    margin-left: 18%;
+  }
+  .projectt-icons {
+    margin-left: 18%;
+  }
 
-}
-.projects{
-  margin-left: 18%;
-}
-.projectt-icons{
-  margin-left: 18%;
+  .exprience {
+    margin-left: 18%;
+  }
 
-}
+  .exprience1 {
+    width: 100%;
+    margin-left: 18%;
+    font-size: 10px;
+    padding-bottom: 100px;
+  }
 
-.exprience{
-  margin-left: 18%;
+  .etext-img p {
+    font-size: 13px;
+  }
 
-}
+  .Etext-date {
+    width: 100%;
+  }
 
-.exprience1{
-  width: 100%;
-  margin-left: 18%;
-  font-size: 10px;
-  padding-bottom: 100px;
-}
+  .contact {
+    width: 555px;
+    margin-top: 300px;
+    height: 100%;
+  }
+  .contact-wrap {
+    width: 75%;
+    margin-left: 90px;
+  }
+  header .fam {
+    display: block;
+    font-size: 25px;
+  }
 
-.etext-img p{
-  font-size: 13px;
-}
+  header ul .fam {
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
 
+  header ul {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    padding-top: 50px;
+    transition: 3s;
+  }
 
-.Etext-date{
-  width: 100%;
-}
+  header ul {
+    display: block;
+  }
 
-.contact{
-  width: 555px;
-  margin-top: 300px;
-  height: 100%;
+  header ul li,
+  header ul .fam {
+    margin: 25px;
+  }
 }
-.contact-wrap{
-  width: 75%;
-  margin-left: 90px;
-}
-header .fam{
-  display: block;
-  font-size: 25px;
-}
-
-header ul .fam{
-  top: 25px;
-  left: 25px;
-  cursor: pointer;
-}
-
-header ul{
-  background-color: black;
-  position: fixed;
-  top: 0;
-  right: -200px;
-  width: 200px;
-  height: 100%;
-  padding-top: 50px;
-  transition: 3s;
-}
-
-header ul {
-  display: block; 
-}
-
-header ul li  ,header ul .fam {
-  margin: 25px;
-}
-}
-
